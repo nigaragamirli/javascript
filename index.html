@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="buttons">
+        <button class="first_button" onclick="alert('Im Inline Function')"><b>InlineFnc</b></button>
+        <button class="second_button" onclick="InternalFnc()"><b>InternalFnc</b></button>
+        <button class="third_button" onclick="ExternalFnc()"><b>ExternalFnc</b></button>
+    </div>
+    
+</body>
+</html>
+<style>
+     button{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(205, 255, 213);
+        color: black;
+     }
+     .buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 250px;
+     }
+     .first_button{
+        margin-left: 30px;
+     }
+     .second_button{
+        margin-left: 30px;
+     }
+     .third_button{
+        margin-left: 30px;
+     }
+     button:hover {
+  background-color: rgb(121, 255, 143);
+  color: white;
+  cursor: pointer;
+  border: none;
+    }
+</style>
+<script>
+    function InternalFnc() {
+    alert ("Im Internal Function");
+  }
+</script>
